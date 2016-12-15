@@ -1,15 +1,13 @@
+
 <p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
+  <strong><%= comment.user.email.split('@')[0].capitalize %>:</strong>
   <%= comment.body %>
 </p>
- 
+<% if current_user == comment.user %>
 <p>
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger' %>
 </p>
+<% end %>
+<hr>
