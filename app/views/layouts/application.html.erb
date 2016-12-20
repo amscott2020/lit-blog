@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <%= render 'layouts/blogmeta' %>
-    <title>Blog</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <%= render 'layouts/blogmeta' %>
+  <title>Blog</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
 
-  <body>
+<body>
   <%= render 'layouts/nav' %>
   <div class="container">
     <%= render 'layouts/notice' %>
     <%= yield %>
   </div>
-  </body>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_api_key'] %>"></script>
+</body>
 </html>

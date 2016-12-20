@@ -20,7 +20,7 @@ gem "paperclip", "~> 5.0.0"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+#gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -42,6 +42,10 @@ end
 gem 'twitter-bootstrap-rails'
 #devise for authentication
 gem 'devise'
+#Figaro for hiding sensitive data in ENV variables
+gem 'figaro'
+#Geocoder for address conversion to Lat/Long
+gem 'geocoder'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
