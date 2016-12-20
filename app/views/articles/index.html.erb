@@ -13,9 +13,7 @@
       <p class="blog-post-meta"><%= article.created_at.to_s(:created_on) %> by <%= article.user.email.split('@')[0].capitalize %></p>
       <p><%= truncate(article.text, length: 20, omission: '...') %></p>
       <p><%= link_to 'Read More', article %></p>
-      
     </div><!-- /.blog-post -->
-  
   </div>
   <% end %>
 </div>
