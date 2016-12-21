@@ -1,3 +1,22 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html { 
+  background: url(http://www.nanobuffet.com/server22-cdn/2016/04/01/old-books-on-shelf-library-books-shelfs-942b6e43e402644c.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+
+#welcome {
+  position:absolute;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+#main {
+  color:  #d3ccc8;
+}

@@ -46,6 +46,8 @@ gem 'devise'
 gem 'figaro'
 #Geocoder for address conversion to Lat/Long
 gem 'geocoder'
+#AWS for image uploader via Heroku
+gem 'aws-sdk'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
